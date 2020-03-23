@@ -2,20 +2,23 @@
   "name": "goit-react-hw-02-reader",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Mishanya77.github.io/goit-react-hw-03-image-finder",
   "dependencies": {
     "axios": "^0.19.2",
+    "gh-pages": "^2.2.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-loader-spinner": "^3.1.5",
     "react-scripts": "3.2.0"
   },
-  "homepage": "./",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "lint": "eslint src/**/*.js",
     "lint:fix": "eslint src/**/*.js --fix",
     "lint:format": "prettier src/**/*.{js,css,json} --write"
